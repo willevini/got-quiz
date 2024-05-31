@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
   return (
       <div className={styles.app}>
-        <h1>Quiz de Game of Thrones</h1>
+        <h1>Descubra sua casa em Game of Thrones</h1>
         {quizComplete ? (
             <Result house={house} onRetry={handleRetry} />
         ) : (

@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Game+of+Thrones&display=swap');
-
 .app {
   text-align: center;
-  font-family: 'Game of Thrones', sans-serif;
+  font-family: sans-serif;
   background-color: #141414;
   color: #ffffff;
   min-height: 100vh;
@@ -10,11 +8,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .app h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: 'GameOfThrones', sans-serif;
   margin-bottom: 2rem;
 }
 
