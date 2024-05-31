@@ -1,0 +1,33 @@
+.welcome {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  color: #ffffff;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'GameOfThrones', sans-serif;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f4c542;
+    border: none;
+    color: #1c1c1c;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #e0b533;
+    }
+  }
+}
