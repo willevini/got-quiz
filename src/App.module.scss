@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Game+of+Thrones&display=swap');
+
+.app {
+  text-align: center;
+  font-family: 'Game of Thrones', sans-serif;
+  background-color: #141414;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.app button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #1f1f1f;
+  }
+}

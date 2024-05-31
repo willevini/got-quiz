@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Question.module.scss';
 
 interface QuestionProps {
     question: string;
@@ -9,7 +10,7 @@ interface QuestionProps {
 
 const Question: React.FC<QuestionProps> = ({ question, options, selectedOption, onSelectOption }) => {
     return (
-        <div>
+        <div className={styles.question}>
             <h2>{question}</h2>
             <ul>
                 {Object.keys(options).map((option) => (

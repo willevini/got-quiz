@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import {QUESTIONS} from "./questions";
+import styles from './App.module.scss';
 
 const App: React.FC = () => {
   const [quizComplete, setQuizComplete] = useState(false);
@@ -18,7 +19,7 @@ const App: React.FC = () => {
   };
 
   return (
-      <div>
+      <div className={styles.app}>
         <h1>Quiz de Game of Thrones</h1>
         {quizComplete ? (
             <Result house={house} onRetry={handleRetry} />

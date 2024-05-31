@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import styles from './Quiz.module.scss';
 import {QuizProps} from "../../types";
 import Question from "../Question";
-
 
 const houses = ['Stark', 'Lannister', 'Targaryen', 'Baratheon'];
 
@@ -32,14 +32,16 @@ const Quiz: React.FC<QuizProps> = ({ questions, onQuizComplete }) => {
     };
 
     return (
-        <div>
+        <div className={styles.quiz}>
             {currentQuestionIndex < questions.length ? (
-                <Question
-                    question={questions[currentQuestionIndex].question}
-                    options={questions[currentQuestionIndex].options}
-                    selectedOption={selectedOptions[currentQuestionIndex] || null}
-                    onSelectOption={handleSelectOption}
-                />
+                <div className={styles['question-container']}>
+                    <Question
+                        question={questions[currentQuestionIndex].question}
+                        options={questions[currentQuestionIndex].options}
+                        selectedOption={selectedOptions[currentQuestionIndex] || null}
+                        onSelectOption={handleSelectOption}
+                    />
+                </div>
             ) : (
                 <div>Quiz Finished!</div>
             )}
