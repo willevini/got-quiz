@@ -1,11 +1,22 @@
 import React, { useState } from 'react';
-import styles from './Quiz.module.scss';
-import {QuizProps} from "../../types";
+
 import Question from "../Question";
 
-const houses = ['Stark', 'Lannister', 'Targaryen', 'Baratheon'];
+import styles from './Quiz.module.scss';
 
-const Quiz: React.FC<QuizProps> = ({ questions, onQuizComplete }) => {
+export interface QuestionType {
+    question: string;
+    options: { [key: string]: string };
+}
+
+interface QuizProps {
+    questions: QuestionType[];
+    onQuizComplete: (house: string) => void;
+}
+
+const Quiz = ({ questions, onQuizComplete }: QuizProps) => {
+    const houses = ['Stark', 'Lannister', 'Targaryen', 'Baratheon'];
+
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
     const [scores, setScores] = useState<{ [key: string]: number }>({

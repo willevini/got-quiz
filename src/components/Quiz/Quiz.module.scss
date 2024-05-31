@@ -3,6 +3,22 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  &.stark {
+    color: #ffffff;
+  }
+
+  &.lannister {
+    color: #ffffff;
+  }
+
+  &.targaryen {
+    color: #ffffff;
+  }
+
+  &.baratheon {
+    color: #000000;
+  }
 }
 
 .quiz .question-container {

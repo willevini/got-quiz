@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import {QUESTIONS} from "./questions";
+
 import Quiz from './components/Quiz';
 import Result from './components/Result';
-import {QUESTIONS} from "./questions";
+
 import styles from './App.module.scss';
 
-const App: React.FC = () => {
+const App = () => {
   const [quizComplete, setQuizComplete] = useState(false);
   const [house, setHouse] = useState('');
 
@@ -19,8 +21,8 @@ const App: React.FC = () => {
   };
 
   return (
-      <div className={styles.app}>
-        <h1>Descubra sua casa em Game of Thrones</h1>
+      <div className={`${styles.app} ${styles[house.toLowerCase()]}`}>
+        <h1>Quiz de Game of Thrones</h1>
         {quizComplete ? (
             <Result house={house} onRetry={handleRetry} />
         ) : (

@@ -1,43 +1,32 @@
 .result {
   text-align: center;
-}
 
-.result h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
+  &.stark {
+    color: #ffffff;
+  }
 
-.result p {
-  font-size: 1.5rem;
-}
+  &.lannister {
+    color: #ffffff;
+  }
 
-.result button {
-  font-size: 1.5rem;
-  padding: 10px 20px;
-  cursor: pointer;
-  background-color: #1f1f1f;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  border-radius: 10px;
-  transition: background-color 0.3s;
-  margin-top: 20px;
+  &.targaryen {
+    color: #ffffff;
+  }
 
-  &:hover {
-    background-color: #ffffff;
-    color: #1f1f1f;
+  &.baratheon {
+    color: #000000;
   }
 }
-.result {
-  text-align: center;
-}
 
 .result h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  font-family: 'GameOfThrones', sans-serif;
 }
 
 .result p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .result button {

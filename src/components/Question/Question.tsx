@@ -8,14 +8,17 @@ interface QuestionProps {
     onSelectOption: (option: string) => void;
 }
 
-const Question: React.FC<QuestionProps> = ({ question, options, selectedOption, onSelectOption }) => {
+const Question = ({ question, options, selectedOption, onSelectOption }: QuestionProps) => {
     return (
         <div className={styles.question}>
             <h2>{question}</h2>
             <ul>
-                {Object.keys(options).map((option) => (
+                {Object.keys(options).map(option => (
                     <li key={option}>
-                        <button onClick={() => onSelectOption(option)} disabled={selectedOption !== null}>
+                        <button
+                            onClick={() => onSelectOption(option)}
+                            disabled={!!selectedOption}
+                        >
                             {option}
                         </button>
                     </li>

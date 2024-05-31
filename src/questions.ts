@@ -1,4 +1,4 @@
-import {QuestionType} from "./types";
+import { QuestionType } from "./components/Quiz/Quiz";
 
 export const QUESTIONS: QuestionType[] = [
     {

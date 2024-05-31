@@ -1,6 +1,5 @@
 .app {
   text-align: center;
-  font-family: sans-serif;
   background-color: #141414;
   color: #ffffff;
   min-height: 100vh;
@@ -8,12 +7,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+
+  &.stark {
+    background-color: #383838;
+    color: #ffffff;
+  }
+
+  &.lannister {
+    background-color: #a41e1e;
+    color: #ffffff;
+  }
+
+  &.targaryen {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+
+  &.baratheon {
+    background-color: #f4c542;
+    color: #000000;
+  }
 }
 
 .app h1 {
-  font-size: 3rem;
-  font-family: 'GameOfThrones', sans-serif;
+  font-size: 4rem;
   margin-bottom: 2rem;
+  font-family: 'GameOfThrones', sans-serif;
 }
 
 .app button {
