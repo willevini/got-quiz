@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Quiz from './components/Quiz';
+import Result from './components/Result';
+import {QUESTIONS} from "./questions";
 
-function App() {
+const App: React.FC = () => {
+  const [quizComplete, setQuizComplete] = useState(false);
+  const [house, setHouse] = useState('');
+
+  const handleQuizComplete = (finalHouse: string) => {
+    setHouse(finalHouse);
+    setQuizComplete(true);
+  };
+
+  const handleRetry = () => {
+    setQuizComplete(false);
+    setHouse('');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <h1>Quiz de Game of Thrones</h1>
+        {quizComplete ? (
+            <Result house={house} onRetry={handleRetry} />
+        ) : (
+            <Quiz questions={QUESTIONS} onQuizComplete={handleQuizComplete} />
+        )}
+      </div>
   );
-}
+};
 
 export default App;
