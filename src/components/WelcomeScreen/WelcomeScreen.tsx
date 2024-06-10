@@ -8,9 +8,10 @@ interface WelcomeScreenProps {
 const WelcomeScreen = ({ onStartQuiz }: WelcomeScreenProps) => {
     return (
         <div className={styles.welcome}>
-            <h1>Bem-vindo ao Quiz de Game of Thrones!</h1>
+            <h1>Game Of Thrones</h1>
+            <h1>Guia das Casas</h1>
             <p>Descubra a qual casa você pertence neste universo fantástico.</p>
-            <button onClick={onStartQuiz}>Iniciar Quiz</button>
+            <button onClick={onStartQuiz}>Iniciar</button>
         </div>
     );
 };
