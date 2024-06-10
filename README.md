@@ -1,8 +1,8 @@
-# Quiz de Game of Thrones
+# Game of Thrones: Guia das Casas
 
 ## Sobre o Projeto
 
-Este projeto consiste em um quiz interativo para descobrir a qual casa do universo de Game of Thrones o jogador mais se assemelha. O quiz apresenta uma série de perguntas com opções de respostas, e ao final, baseado nas escolhas do jogador, é exibido o resultado indicando a casa correspondente.
+Este projeto consiste em um sistema interativo para descobrir a qual casa do universo de Game of Thrones o jogador mais se assemelha. O sistema apresenta uma série de perguntas com opções de respostas, e ao final, baseado nas escolhas do jogador, é exibido o resultado indicando a casa correspondente.
 
 ## Tecnologias Utilizadas
 
